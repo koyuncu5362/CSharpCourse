@@ -145,3 +145,12 @@ static void Add2(int number1,int number2)
     Console.ReadLine();
 }
 Add2(20,30);
+
+//Default Parameter
+static void Add3(int number1, int number2=20)
+{
+    var result = number1 + number2;
+    Console.WriteLine(result);
+    Console.ReadLine();
+}
+Add3(20, 30);
