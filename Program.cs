@@ -156,12 +156,23 @@ static void Add3(int number1, int number2=20)
 Add3(20, 30);
 
 //Ref Keyword
-static void Add4(int number1, int number2 = 20)
+static void Add4(ref int number1, int number2 = 20)
 {
     number1 = 30;
     var result = number1 + number2;
     Console.WriteLine(result);
     Console.ReadLine();
 }
-Add4(ref 20, 30);
+var result = Add4(ref number1, 30);
+
+//Out Keyword
+static void Add5(out int number1, int number2 = 20)
+{
+    number1 = 30;
+    var result = number1 + number2;
+    Console.WriteLine(result);
+    Console.ReadLine();
+}
+var result = Add5(out number1, 30);
+
 
