@@ -105,3 +105,15 @@ switch (number9)
     default:
         break;
 }
+
+//Multiple If
+number9 = 2;
+if (number9>=0 && number9<=100)
+{
+    Console.WriteLine("Number is between 0-100");
+    Console.ReadLine();
+}else if (number9>200 || number9<0)
+{
+    Console.WriteLine("number is less than  0 or greater than 200");
+    Console.ReadLine();
+}
