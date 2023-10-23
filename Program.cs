@@ -186,3 +186,11 @@ static int Multiply(int number1, int number2,int number3)
     return number1 * number2*number3;
 }
 
+//Params Keyword
+static int Add6(params int[] numbers)
+{
+    return numbers.Sum();
+}
+Console.WriteLine(Add6(35,37,72));
+Console.ReadKey();
+
