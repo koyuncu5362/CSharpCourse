@@ -166,13 +166,23 @@ static void Add4(ref int number1, int number2 = 20)
 var result = Add4(ref number1, 30);
 
 //Out Keyword
-static void Add5(out int number1, int number2 = 20)
+static int void Add5(out int number1, int number2 = 20)
 {
     number1 = 30;
     var result = number1 + number2;
     Console.WriteLine(result);
     Console.ReadLine();
+    return result;
 }
 var result = Add5(out number1, 20);
 
+//Method Overloading
+static int Multiply(int number1, int number2)
+{
+    return number1 * number2;
+}
+static int Multiply(int number1, int number2,int number3)
+{
+    return number1 * number2*number3;
+}
 
