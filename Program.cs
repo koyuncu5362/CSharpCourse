@@ -322,3 +322,26 @@ class CustomerManager
 CustomerManager manager = new CustomerManager();
 manager.Update();
 Console.ReadLine();
+
+//Props
+class CustomerManager2
+{
+    public int CustomerId { get; set; }
+    public void Add()
+    {
+        Console.WriteLine("Customer Added");
+    }
+    public void Update()
+    {
+        Console.WriteLine("Customer Updated");
+    }
+
+}
+CustomerManager2 manager2 = new CustomerManager2();
+manager2.CustomerId = 35;
+CustomerManager2 manager3 = new CustomerManager2()
+{
+    CustomerId = 5
+};
+manager2.Update();
+Console.ReadLine();
