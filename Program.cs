@@ -303,3 +303,22 @@ Console.WriteLine(sentence.ToLower());
 Console.WriteLine(sentence.Replace(" ","-"));
 Console.WriteLine(sentence.Remove(2,4));
 Console.ReadLine();
+
+
+//---------------------------------------Classes-------------------------------
+
+class CustomerManager
+{
+    public void Add()
+    {
+        Console.WriteLine("Customer Added");
+    }
+    public void Update()
+    {
+        Console.WriteLine("Customer Updated");
+    }
+
+}
+CustomerManager manager = new CustomerManager();
+manager.Update();
+Console.ReadLine();
