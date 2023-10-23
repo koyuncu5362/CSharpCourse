@@ -163,5 +163,5 @@ static void Add4(int number1, int number2 = 20)
     Console.WriteLine(result);
     Console.ReadLine();
 }
-Add4(20, 30);
+Add4(ref 20, 30);
 
