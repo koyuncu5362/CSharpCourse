@@ -127,3 +127,12 @@ if (number9 >= 0 && number9 <= 100)
         Console.ReadLine();
     }
 }
+
+//-----------------Methods-------------
+
+static void Add()
+{
+    Console.WriteLine("Added");
+}
+Add();
+Console.ReadLine();
