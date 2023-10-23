@@ -42,3 +42,10 @@ Console.ReadLine();
 decimal number6 = 255.1m;
 Console.WriteLine("number6 is {0}", number6);
 Console.ReadLine();
+
+//enums
+enum Days
+{
+    Monday,Tuesday, Wednesday, Thursday, Friday,Saturday
+}
+Console.WriteLine(Days.Friday);
