@@ -263,7 +263,7 @@ foreach (var student in students)
         if (number%i==0)
         {
             result = false;
-            break
+            break;
             
         }
     }
@@ -271,3 +271,17 @@ foreach (var student in students)
     return result;
 }
 IsPrimeNumber(17);
+
+//---------------------------------------Reference Types-------------------------------
+
+//Strings
+string city = "İstanbul";
+string city2 = "İzmir";
+var result2 = city + city2;
+Console.WriteLine(result2);
+foreach (var item in city)
+{
+    Console.WriteLine(item); ;
+    
+}
+Console.ReadLine();
