@@ -23,3 +23,7 @@ Console.ReadLine();
 byte number4 = 255;
 Console.WriteLine("number4 is {0}", number4);
 Console.ReadLine();
+
+//bool
+bool condition = true; 
+Console.ReadLine();
