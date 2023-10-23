@@ -378,3 +378,12 @@ class Product2 : IPerson
     public int FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     public int LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 }
+class PersonManager 
+{
+  public void Add(Product product)
+    {
+        Console.WriteLine(product.FirstName);
+    }
+}
+PersonManager manager5 = new PersonManager();
+manager5.Add(new Product() { Id = 5, FirstName = 4 });
