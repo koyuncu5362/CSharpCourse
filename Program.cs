@@ -37,3 +37,8 @@ Console.ReadLine();
 double number5 = 255.15;
 Console.WriteLine("number5 is {0}", number5);
 Console.ReadLine();
+
+//decimal
+decimal number6 = 255.1m;
+Console.WriteLine("number6 is {0}", number6);
+Console.ReadLine();
