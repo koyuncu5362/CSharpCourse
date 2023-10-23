@@ -1,4 +1,6 @@
 ﻿
+using System.Runtime.CompilerServices;
+
 Console.WriteLine("Hello World");
 Console.ReadKey();
 
@@ -246,9 +248,26 @@ do
 } while (number20>=0);
 
 //ForEach
-
 string[] students3 = new string[3] { "Metin", "Koyuncu", "KK" };
 foreach (var student in students)
 {
     Console.WriteLine(student);
 }
+
+//---------------------------------------Prime Number-------------------------------
+ static bool IsPrimeNumber(int number)
+{
+    bool result = true;
+    for (global::System.Int32 i = 2; i < number-1; i++)
+    {
+        if (number%i==0)
+        {
+            result = false;
+            break
+            
+        }
+    }
+    Console.WriteLine(result);
+    return result;
+}
+IsPrimeNumber(17);
