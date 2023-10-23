@@ -70,3 +70,6 @@ else
     Console.WriteLine("number8 is {0}", number8);
 }
 Console.ReadLine();
+
+//Line If
+Console.WriteLine(number8 ==10?"Number is 10":"Number is not 10");
