@@ -356,3 +356,25 @@ class Customer
 
 
 }
+
+
+//---------------------------------------Interfaces-------------------------------
+interface IPerson
+{
+     int Id { get; set; }
+    int FirstName { get; set; }
+    int LastName { get; set; }
+
+}
+class Product : IPerson
+{
+    public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public int FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public int LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+}
+class Product2 : IPerson
+{
+    public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public int FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public int LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+}
