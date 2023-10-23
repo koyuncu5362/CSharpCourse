@@ -73,3 +73,21 @@ Console.ReadLine();
 
 //Line If
 Console.WriteLine(number8 ==10?"Number is 10":"Number is not 10");
+
+
+// Else IF
+number8 = 10;
+if (number8 == 50)
+{
+    Console.WriteLine("number8 is not {0}", number8);
+
+}
+else if (number8 == 90)
+{
+    Console.WriteLine("number8 is {0}", number8);
+}
+else
+{
+    Console.WriteLine("number8 is {0}", number8);
+}
+Console.ReadLine();
