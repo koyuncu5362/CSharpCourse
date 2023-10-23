@@ -117,3 +117,13 @@ if (number9>=0 && number9<=100)
     Console.WriteLine("number is less than  0 or greater than 200");
     Console.ReadLine();
 }
+
+//Integrate If
+if (number9 >= 0 && number9 <= 100)
+{
+    if (number9 == 0 && number9 == 100)
+    {
+        Console.WriteLine("Number is equal 0-100");
+        Console.ReadLine();
+    }
+}
