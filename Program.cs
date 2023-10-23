@@ -32,3 +32,8 @@ Console.ReadLine();
 char character = 'A';
 Console.WriteLine("character is {0}", character);
 Console.ReadLine();
+
+//double
+double number5 = 255.15;
+Console.WriteLine("number5 is {0}", number5);
+Console.ReadLine();
