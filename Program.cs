@@ -91,3 +91,17 @@ else
     Console.WriteLine("number8 is {0}", number8);
 }
 Console.ReadLine();
+
+//Switch Case
+var number9 = 20;
+switch (number9)
+{
+    case 50:
+        Console.WriteLine("Is Not {0}",number9);
+        break;
+    case 20:
+        Console.WriteLine("Is  {0}", number9);
+        break;
+    default:
+        break;
+}
