@@ -49,3 +49,9 @@ enum Days
     Monday,Tuesday, Wednesday, Thursday, Friday,Saturday
 }
 Console.WriteLine(Days.Friday);
+
+//var
+var number7 = 10;
+number7 = 'A';
+Console.WriteLine("number7 is {0}", number7);
+Console.ReadLine();
