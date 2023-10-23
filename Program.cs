@@ -154,3 +154,14 @@ static void Add3(int number1, int number2=20)
     Console.ReadLine();
 }
 Add3(20, 30);
+
+//Ref Keyword
+static void Add4(int number1, int number2 = 20)
+{
+    number1 = 30;
+    var result = number1 + number2;
+    Console.WriteLine(result);
+    Console.ReadLine();
+}
+Add4(20, 30);
+
