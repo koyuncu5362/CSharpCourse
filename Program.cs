@@ -194,3 +194,13 @@ static int Add6(params int[] numbers)
 Console.WriteLine(Add6(35,37,72));
 Console.ReadKey();
 
+
+//----------------------------Arrays------------------------
+string[] students = new string[3] {"Metin","Koyuncu","KK"};
+students[0] = "Metin";
+students[2] = "koyuncu";
+string[] students2 = { "Metin", "Koyuncu", "KK" };
+Console.WriteLine(students);
+Console.WriteLine(students2);
+ 
+
