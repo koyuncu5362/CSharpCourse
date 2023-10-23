@@ -217,3 +217,12 @@ for (int i = 0; i < regions.GetUpperBound(0); i++)
     }
 }
 
+//----------------------------Loops------------------------
+
+
+//For
+for (int i = 0; i < 100; i++)
+{
+    Console.WriteLine(i);
+}
+Console.ReadLine();
