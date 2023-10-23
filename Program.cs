@@ -235,3 +235,12 @@ while (number20>=0)
     number20--;
     Console.WriteLine(number20);
 }
+
+//Do While
+
+ number20 = 100;
+do
+{
+    Console.WriteLine(number20);
+    number20--;
+} while (number20>=0);
