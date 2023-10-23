@@ -226,3 +226,12 @@ for (int i = 0; i < 100; i++)
     Console.WriteLine(i);
 }
 Console.ReadLine();
+
+//While
+
+int number20 = 100;
+while (number20>=0)
+{
+    number20--;
+    Console.WriteLine(number20);
+}
