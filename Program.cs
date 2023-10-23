@@ -244,3 +244,11 @@ do
     Console.WriteLine(number20);
     number20--;
 } while (number20>=0);
+
+//ForEach
+
+string[] students3 = new string[3] { "Metin", "Koyuncu", "KK" };
+foreach (var student in students)
+{
+    Console.WriteLine(student);
+}
