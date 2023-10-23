@@ -345,3 +345,14 @@ CustomerManager2 manager3 = new CustomerManager2()
 };
 manager2.Update();
 Console.ReadLine();
+
+//Encapsulation
+
+class Customer
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Region { get { return "City "+  Region; } set { Region=value; } }
+
+
+}
