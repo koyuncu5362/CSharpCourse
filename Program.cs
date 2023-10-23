@@ -27,3 +27,8 @@ Console.ReadLine();
 //bool
 bool condition = true; 
 Console.ReadLine();
+
+//char
+char character = 'A';
+Console.WriteLine("character is {0}", character);
+Console.ReadLine();
