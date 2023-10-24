@@ -1,5 +1,6 @@
 ﻿
 using System.Runtime.CompilerServices;
+using Tobeto;
 
 Console.WriteLine("Hello World");
 Console.ReadKey();
@@ -48,7 +49,7 @@ Console.ReadLine();
 //enums
 enum Days
 {
-    Monday,Tuesday, Wednesday, Thursday, Friday,Saturday
+    Monday,Tuesday, Wednesday, Thursday, Friday=10,Saturday
 }
 Console.WriteLine(Days.Friday);
 
@@ -348,13 +349,15 @@ Console.ReadLine();
 
 //Encapsulation
 
-class Customer
+class Customer:IPerson
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Region { get { return "City "+  Region; } set { Region=value; } }
 
-
+    public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    int IPerson.FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    int IPerson.LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 }
 
 
@@ -387,3 +390,16 @@ class PersonManager
 }
 PersonManager manager5 = new PersonManager();
 manager5.Add(new Product() { Id = 5, FirstName = 4 });
+
+IPerson myPerson = new Customer();
+
+CustomerManager5 customer2 = new CustomerManager5();
+customer2.Add(new SqlServerCustomerDal());
+
+//Polymorphizm
+ICustomerDal[] customerDals = new ICustomerDal[3]
+{
+    new SqlServerCustomerDal(),
+    new OracleServerCustomerDal(),
+    new MySqlServerCustomerDal()
+};
