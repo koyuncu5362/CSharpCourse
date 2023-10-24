@@ -47,16 +47,19 @@ Console.WriteLine("number6 is {0}", number6);
 Console.ReadLine();
 
 //enums
+Console.WriteLine(Days.Friday);
 enum Days
 {
-    Monday,Tuesday, Wednesday, Thursday, Friday=10,Saturday
+    Monday=10,Tuesday, Wednesday, Thursday, Friday,Saturday
 }
-Console.WriteLine(Days.Friday);
+
 
 //var
-var number7 = 10;
-number7 = 'A';
-Console.WriteLine("number7 is {0}", number7);
+
+var numberrr = 10;
+var number19 = 10;
+
+Console.WriteLine("number7 is {0}", number19);
 Console.ReadLine();
 
 //-----------------Conditionals-------------
@@ -159,35 +162,47 @@ static void Add3(int number1, int number2=20)
 Add3(20, 30);
 
 //Ref Keyword
-static void Add4(ref int number1, int number2 = 20)
+int number15 = 100;
+int number25 = 200;
+
+var result10 = Add4(ref number15, number25);
+static int Add4(ref int number15, int number25 = 20)
 {
-    number1 = 30;
-    var result = number1 + number2;
-    Console.WriteLine(result);
+    number15 = 30;
+    Console.WriteLine(number15 + number25);
     Console.ReadLine();
+    return number15 + number25;
 }
-var result = Add4(ref number1, 30);
+
 
 //Out Keyword
-static int void Add5(out int number1, int number2 = 20)
+int number16 = 100;
+int number26 = 200;
+
+var result55 = Add5(out number16, number26);
+static int Add5(out int number16, int number26 = 20)
 {
-    number1 = 30;
-    var result = number1 + number2;
+    number16 = 30;
+    var result = number16 + number26;
     Console.WriteLine(result);
     Console.ReadLine();
     return result;
 }
-var result = Add5(out number1, 20);
+
 
 //Method Overloading
-static int Multiply(int number1, int number2)
+class Overloading
 {
-    return number1 * number2;
+    static int Multiply(int number111, int number222)
+    {
+        return number111 * number222;
+    }
+    static int Multiply(int number111, int number222, int number3)
+    {
+        return number111 * number222 * number3;
+    }
 }
-static int Multiply(int number1, int number2,int number3)
-{
-    return number1 * number2*number3;
-}
+
 
 //Params Keyword
 static int Add6(params int[] numbers)
@@ -489,3 +504,6 @@ Person[] persons = new Person[3]
 {
     new Person{FirstName="Mahmut" },new Customer7{FirstName="Metin" },new Student{FirstName="Koyuncu" }
 };
+
+//-------------------------------------Dama Demo---------------------------------
+
