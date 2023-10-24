@@ -403,3 +403,68 @@ ICustomerDal[] customerDals = new ICustomerDal[3]
     new OracleServerCustomerDal(),
     new MySqlServerCustomerDal()
 };
+
+//-------------------------------------implementation--------------
+
+//Interfaces Demo
+interface IWorker
+{
+    void Work();
+    
+    
+}
+interface IEat
+{
+    void Eat();
+}
+interface ISalary
+{
+    void GetSalary();
+}
+class Manager : IWorker, IEat, ISalary
+{
+    public void Eat()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void GetSalary()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Work()
+    {
+        throw new NotImplementedException();
+    }
+}
+class Worker : IWorker, IEat, ISalary
+{
+    public void Eat()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void GetSalary()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Work()
+    {
+        throw new NotImplementedException();
+    }
+}
+class Robot : IWorker
+{
+    public void Work()
+    {
+        throw new NotImplementedException();
+    }
+}
+IWorker[] workers = new IWorker[3]
+{
+    new Worker(),
+    new Robot(),
+    new Manager()
+};
